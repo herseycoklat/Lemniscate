@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/demos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/audio/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
